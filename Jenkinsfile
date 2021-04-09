@@ -22,7 +22,7 @@ node {
       def resourceGroup = 'QuickstartJetkins-rg'
       def webAppName = 'newjenkins12-app-omg1'
       // login Azure
-      withCredentials([usernamePassword(credentialsId: 'testing', passwordVariable: 'P4jXTr0LMBtTu3rExk5nWL4_3Kp9atPQCf', usernameVariable: '5c00d252-8711-4cea-94d1-598d282b6a12')]) {
+      withCredentials([usernamePassword(credentialsId: 'Testing', passwordVariable: 'P4jXTr0LMBtTu3rExk5nWL4_3Kp9atPQCf', usernameVariable: '5c00d252-8711-4cea-94d1-598d282b6a12')]) {
        sh '''
           az login --testing -u $5c00d252-8711-4cea-94d1-598d282b6a12 -p $P4jXTr0LMBtTu3rExk5nWL4_3Kp9atPQCf -t $0adb040b-ca22-4ca6-9447-ab7b049a22ff
           az account set -s $AZURE_SUBSCRIPTION_ID
